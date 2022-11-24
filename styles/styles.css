@@ -20,7 +20,6 @@ body *{
     font-size: 11px;
     font-style: italic;
     text-transform: uppercase;
-    text-align: center;
     color:#FFFFFF;
     border: 1px solid #E3B873;
     outline: 0;
@@ -259,6 +258,7 @@ body *{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 158px;
 }
 
 .title_block_subtitle{
@@ -269,7 +269,7 @@ body *{
     color: white;
 }
 
-.title_block_subtitle:nth-last-of-type(1){
+.title_block:nth-last-of-type(2) .title_block_subtitle:nth-child(1){
     color: black;
 }
 
@@ -336,7 +336,7 @@ body *{
     margin-bottom: 75.5px;
 }
 
-.form_container{
+.thrid_section_form_container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,6 +363,10 @@ body *{
     padding-left: 0;
     padding-bottom: 3px;
     outline: 0;
+}
+
+.form_input::placeholder{
+    color: rgba(54, 54, 54, 0.7);
 }
 
 .thrid_section_form_button{
@@ -467,8 +471,153 @@ body *{
     margin-top: -40px;
     align-self: flex-start;
     margin-left: 31px;
-    font-family: 'Yeseva One';
+    font-family: 'Yeseva One', serif;
     font-style: normal;
     font-size: 18px;
     padding: 17px 18.5px;
+}
+
+.fourth_section_container_subcontainer{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 118px;
+}
+
+.fourth_section_subcontainer_content{
+    padding-right: 220px;
+    margin-left: 20px;
+}
+
+.content_item_text{
+    width: 320px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+}
+
+.content_item_number_circle{
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: white;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    background-color: #E3B873;
+    font-family: 'Yeseva One', serif;
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.content_item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 83px;
+}
+
+.fourth_section_form_contaner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fourth_section_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 506px;
+    height: 509px;
+    background-color: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 38px;
+    padding: 28px 49px;
+}
+
+.fourth_section_logo{
+    display: flex;
+    align-items: center;
+    padding-left: 33px;
+}
+
+.fourth_section_logo_circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #E3B873;
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+    margin-right: 25px;
+}
+
+.fourth_section_logo_text{
+    width: 230px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+.fourth_section_form_button{
+    font-style: normal;
+    align-self: flex-end;
+    font-size: 13px;
+    padding: 18px 22px;
+}
+
+.form_subtitle{
+    width: 270px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 0 38px 0;
+}
+
+.fourth_section_checkbox{
+    align-self: flex-start;
+}
+
+.fourth_section_checkbox_span{
+    width: 240px;
+    color: white;
+}
+
+.fourth_section_form_lable{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fourth_section_form_input{
+    width: 408px;
+    background-color: transparent;
+    border-bottom: 1px rgba(255, 255, 255, 0.15) solid;
+    color: white;
+    padding: 3px 0;
+}
+
+.fourth_section_form_input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.fourth_section_form_contaner{
+    margin-bottom: 53px;
+}
+
+.fourth_section_form_contaner:nth-last-of-type(1){
+    margin-bottom: 16px;
+}
+
+.fourth_section_checkbox{
+    margin-bottom: 5px;
+}
+
+.fourth_section_container{
+    background-image: url('../images/fourth_section_background_1.jpg');
+    background-repeat: no-repeat;
+    background-position: -100px -60px;
 }
