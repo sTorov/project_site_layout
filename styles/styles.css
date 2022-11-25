@@ -46,6 +46,14 @@ body *{
     margin: 0 auto;
 }
 
+@media (max-width:1300px){
+    .container{
+        width: 100%;
+        padding: 0 18px;
+        min-width: 375px;
+    }
+}
+
 .header-container,
 .footer-container{
     display: flex;
@@ -63,6 +71,13 @@ body *{
     padding-left: 70px;
     list-style: none;
     display: flex;
+}
+
+@media (max-width:1300px){
+    .header-navigation,
+    .header_button{
+        display: none;
+    }
 }
 
 .header-navigation_item a,
@@ -96,11 +111,43 @@ body *{
     z-index: 1;
 }
 
+@media (max-width:1300px){
+    .first_section{
+        padding-top: 85px;
+        height: 476px;
+    }
+
+    .first_section_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 375px;
+    }
+}
+
+@media (max-width:768px){
+    .first_section_container{
+        max-width: 339px;
+        align-items: flex-start;
+        padding: 0 0 0 20px;
+    }
+}
+
 .first_section_text{
     font-size: 22px;
     line-height: 36px;
     color: #FFFFFF;
     max-width: 550px;
+}
+
+@media (max-width:1300px){
+    .first_section_text{
+        font-size: 14px;
+        line-height: 19px;
+        max-width: 339px;
+        letter-spacing: 0.7px;
+        margin-bottom: 52px;
+    }
 }
 
 .background{
@@ -121,6 +168,14 @@ body *{
     color: #FFFFFF;
     margin: 0;
     max-width: 550px;
+}
+
+@media (max-width:1300px){    
+    .title{
+        max-width: 339px;
+        font-size: 23px;
+        line-height: 31px;
+    }    
 }
 
 .subtitle{
@@ -144,21 +199,47 @@ body *{
     color: #E3B873;
 }
 
-.button_group,
+.first_section_button_group,
 .sixth_section_list_title_block,
 .seventh_section_icons_block{
     display: flex;
     align-items: center;
 }
 
-.button_group_item1{
+@media (max-width:768px){
+    .first_section_button_group{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.first_section_button_group_item{
     margin-right: 20px;
     padding: 20px 44px;
 }
 
-.button_group_item2{
-    margin-right: 20px;
+.first_section_button_group > .first_section_button_group_item:last-child{
     padding: 20px 30px;
+}
+
+.button_span_2{
+    display: none;
+}
+
+@media (max-width:768px){
+    .first_section_button_group_item{
+        width: 95%;
+        margin-bottom: 26px;
+    }
+
+    .button_span_1{
+        display: none;
+    }
+
+    .button_span_2{
+        display: inline;
+    }
 }
 
 .second_section{
