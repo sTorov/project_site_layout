@@ -352,10 +352,9 @@ body *{
 @media (max-width:1300px){
     .second_section_container{
         align-items: center;
-        align-content: normal;
+        align-content: center;
         width: 100%;
         height: auto;
-        padding: 0 18px;      
     }
 }
 
@@ -666,6 +665,60 @@ body *{
     opacity: 1;
 }
 
+.thrid_section_list{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.thrid_section_list_object{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.thrid_section_list_object:nth-last-of-type(1){
+    margin-right: 0;
+}
+
+.list_image{
+    position: relative;
+    z-index: -1;
+}
+
+.list_subtitle{
+    font-size: 18px;
+    letter-spacing: 0.1px;
+    color: black;
+    text-transform: none;
+    padding-top: 25px;
+    margin-left: -14px;
+}
+
+.list{
+    width: 330px;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    padding-left: 46px;
+    padding-bottom: 45px;
+    margin-top: -135px;
+}
+
+.list_button{
+    margin-top: -40px;
+    align-self: flex-start;
+    margin-left: 31px;
+    font-family: 'Yeseva One', serif;
+    font-style: normal;
+    font-size: 18px;
+    padding: 17px 18.5px;
+}
+
 @media (max-width:1300px){
     .thrid_section_substract{
         background: #131313;
@@ -683,10 +736,12 @@ body *{
 
     .thrid_section_container:nth-of-type(2){
         padding-top: 77px;
+        margin-bottom: 0;
     }
 
     .title_block_subtitle{
         font-size: 22px;
+        letter-spacing: normal;
     }
 
     .video{
@@ -749,8 +804,31 @@ body *{
     .checkbox_block{
         color: white;
     }
-}
 
+    .fifth_section,
+    .fourth_section{
+        display: none;
+    }
+
+    .thrid_section_list{
+        flex-direction: column;
+        width: max-content;
+        margin-bottom: 0;
+    }
+
+    .thrid_section_list_object{
+        align-items: flex-start;
+        margin: 0 0 59px 0;
+    }
+
+    .thrid_section_list_object:last-child{
+        margin-bottom: 55px;
+    }
+
+    .list_button{
+        margin-left: 0;
+    }
+}
 
 @media (max-width:768px){
     .player_button{
@@ -774,68 +852,20 @@ body *{
         line-height: 19px;
         width: 340px;
     }
+    
+    .list{
+        line-height: 22px;
+    }
+
+    .list_button{
+        font-size: 15px;
+    }
 }
 
 @media (max-width:440px){
     .form{
         width: 349px;
     }
-}
-
-
-
-.thrid_section_list{
-    width: 1000px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 70px;
-}
-
-.thrid_section_list_object{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 30px;
-}
-
-.thrid_section_list_object:nth-last-of-type(1){
-    margin-right: 0;
-}
-
-.list_image{
-    position: relative;
-    z-index: -1;
-}
-
-.list_subtitle{
-    font-size: 18px;
-    letter-spacing: 0.1px;
-    color: black;
-    text-transform: none;
-    padding-top: 25px;
-    margin-left: -14px;
-}
-
-.list{
-    width: 330px;
-    font-size: 13px;
-    line-height: 27px;
-    color: #959595;
-    background: #FFFFFF;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-    padding-left: 46px;
-    padding-bottom: 45px;
-    margin-top: -135px;
-}
-
-.list_button{
-    margin-top: -40px;
-    align-self: flex-start;
-    margin-left: 31px;
-    font-family: 'Yeseva One', serif;
-    font-style: normal;
-    font-size: 18px;
-    padding: 17px 18.5px;
 }
 
 .fourth_section_substrate{
@@ -1068,6 +1098,11 @@ body *{
     display: flex;
 }
 
+.mobile_subtitle,
+.sixth_section .image_block{
+    display: none;
+}
+
 .sixth_section_list{
     width: 376px;
     height: 422px;
@@ -1206,6 +1241,95 @@ body *{
     padding: 15px 75px;
 }
 
+@media (max-width:1300px)
+{
+    .footer,
+    .sixth_section .title_block,
+    .sixth_section_container_text,
+    .sixth_section_background,
+    .sixth_section_list_block{
+        display: none;
+    }
+
+    .mobile_subtitle,
+    .sixth_section .image_block{
+        display: block;
+        z-index: 3;
+    }
+
+    .mobile_subtitle{
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: normal;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .sixth_section_container > .image_block{
+        max-width: 340px;
+    }
+
+    .sixth_section_form_container{
+        margin: -210px 0 0 0;
+        padding: 0;
+    }
+
+    .sixth_section_form{
+        padding: 150px 18px 0 18px;
+        height: auto;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .sixth_section_form_subtitle{
+        width: auto;
+    }
+}
+
+@media (max-width:768px){
+    .sixth_section_form{
+        align-items: normal;
+    }
+
+    .sixth_section_form_subcontainer{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .sixth_section_form_contaner{
+        width: 100%;
+        margin: 0;
+    }
+
+    .sixth_section_form_subcontainer  .sixth_section_form_input,
+    .sixth_section_form_input{
+        width: 100%;
+        margin: 0 0 63px 0;
+    }
+
+    .sixth_section_form > .sixth_section_form_contaner > .sixth_section_form_input{
+        margin-bottom: 23px;
+    }
+
+    .sixth_section_form_subtitle{
+        font-size: 20px;
+        margin-bottom: 52px;
+    }
+
+    .sixth_section_checkbox_span{
+        width: auto;
+    }
+
+    .sixth_section_form_button{
+        width: 100%;
+    }
+
+    .sixth_section_checkbox{
+        margin-bottom: 67px;
+    }
+}
+
 .seventh_section{
     height: 954px;
     position: relative;
@@ -1236,4 +1360,41 @@ body *{
 
 .seventh_section_icons{
     margin-bottom: 43px;
+}
+
+.seventh_section_icons:last-child{
+    margin-right: 0;
+}
+
+.br{
+    display: none;
+}
+
+@media (max-width:1300px){
+    .seventh_section{
+        background-image: none;
+        background-color: #131313;
+        height: auto;
+    }
+
+    .seventh_section .background{
+        display: none;
+    }
+
+    .seventh_section .image{
+        min-width: 340px;
+        min-height: 255px;
+        object-fit: cover;
+        margin: 50px 0;
+        order: -1;
+    }
+
+    .seventh_section_title{
+        font-size: 18px;
+        width: 330px;
+    }
+
+    .br{
+        display: inline;
+    }
 }
